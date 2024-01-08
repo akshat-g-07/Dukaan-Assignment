@@ -6,6 +6,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { Tooltip } from "@mui/material";
 import "./App.css";
+import Solution from "./components/Solution";
 
 function App() {
   const [pixelPerfect, setPixelPerfect] = useState(true);
@@ -14,7 +15,7 @@ function App() {
       {/*
   Header to control the type of solution i.e., Pixel Perfect vs Responsive
   */}
-      <div className="sticky w-screen top-0 h-auto flex justify-center items-center text-center font-semibold py-1 bg-emerald-500 text-white">
+      <div className="fixed w-screen top-0 h-auto flex justify-center items-center text-center font-semibold py-1 bg-emerald-500 text-white">
         <div
           className="w-fit hover:bg-emerald-800 cursor-pointer px-2 rounded-lg duration-300"
           onClick={() => {
@@ -36,8 +37,10 @@ function App() {
   Header Done
   */}
 
+      <Solution pixelPerfect={pixelPerfect} />
+
       {/*
-  Footer
+  Footer Starts
   */}
       <div className="fixed w-screen cursor-pointer bottom-0 h-auto flex justify-center items-end text-center font-semibold py-1 bg-slate-500 text-white">
         Made By&nbsp;
@@ -86,7 +89,7 @@ function App() {
         </div>
       </div>
       {/*
-  Footer Done
+  Footer Ends
   */}
     </>
   );

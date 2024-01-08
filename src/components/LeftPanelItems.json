@@ -1,0 +1,14 @@
+[
+  { "icon": "navbar-home", "name": "Home" },
+  { "icon": "navbar-orders", "name": "Orders" },
+  { "icon": "navbar-products", "name": "Products" },
+  { "icon": "navbar-delivery", "name": "Delivery" },
+  { "icon": "navbar-marketing", "name": "Marketing" },
+  { "icon": "navbar-analytics", "name": "Analytics" },
+  { "icon": "navbar-payments", "name": "Payments" },
+  { "icon": "navbar-tools", "name": "Tools" },
+  { "icon": "navbar-discounts", "name": "Discounts" },
+  { "icon": "navbar-audience", "name": "Audience" },
+  { "icon": "navbar-appearance", "name": "Appearance" },
+  { "icon": "navbar-plugins", "name": "Plugins" }
+]
