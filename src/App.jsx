@@ -22,7 +22,7 @@ function App() {
             setPixelPerfect(!pixelPerfect);
           }}
         >
-          View Responsive
+          View Laptop Responsive
           <Switch
             checked={pixelPerfect}
             onChange={() => {
