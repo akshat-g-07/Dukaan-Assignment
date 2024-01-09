@@ -4,162 +4,104 @@ const DashboardPagination = ({ pixelPerfect }) => {
   return (
     <article
       className={`${
-        pixelPerfect ? "w-[610px] h-[32px] flex items-center mx-auto" : ""
-      }`}
+        pixelPerfect ? "w-[610px]" : "w-1/2"
+      } h-8 flex items-center mx-auto`}
     >
       <div
         className={`${
-          pixelPerfect
-            ? "w-[100px] rounded-[4px] border-[1px] py-[6px] pl-[6px] pr-[12px] border-[#D9D9D9] flex items-center justify-center bg-[#FFFFFF] h-[32px]"
-            : ""
-        }`}
+          pixelPerfect ? "border-[1px]" : "border"
+        } rounded py-1.5 w-[100px] pl-1.5 pr-3 border-[#D9D9D9] flex items-center justify-center bg-[#FFFFFF] h-8`}
       >
         <div
-          className={`${pixelPerfect ? "w-[18px] h-[18px] rotate-180" : ""}`}
+          className={`${
+            pixelPerfect ? "w-[18px] h-[18px]" : "w-4 h-4"
+          } rotate-180`}
         >
           <img
             src="/images/outlined-chevron-right.png"
             alt="outlined-chevron-right"
           />
         </div>
-        <div className={`${pixelPerfect ? "w-[6px] h-full" : ""}`} />
-        <div
-          className={`${
-            pixelPerfect ? "text-[#4D4D4D] text-sm font-medium" : ""
-          }`}
-        >
-          Previous
-        </div>
+        <div className="w-1.5 h-full" />
+        <div className="text-[#4D4D4D] text-sm font-medium">Previous</div>
       </div>
-      <div className={`${pixelPerfect ? "w-[24px] h-full" : ""}`} />
-      <div className={`${pixelPerfect ? "w-[388px] h-[28px] flex" : ""}`}>
+      <div className="w-6 h-full" />
+      <div className={`${pixelPerfect ? "w-[388px]" : "w-8/12"} h-7 flex`}>
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center py-[2px] text-sm font-normal self-stretch text-[#4D4D4D]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center py-0.5 text-sm font-normal self-stretch text-[#4D4D4D]`}
         >
           1
         </div>
-        <div className={`${pixelPerfect ? "w-[8px] h-full" : ""}`} />
+        <div className="w-2 h-full" />
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center py-[2px] text-sm font-normal self-stretch text-[#4D4D4D]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center py-0.5 text-sm font-normal self-stretch text-[#4D4D4D]`}
         >
           ...
         </div>
-        <div className={`${pixelPerfect ? "w-[8px] h-full" : ""}`} />
+        <div className="w-2 h-full" />
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center flex justify-center text-[14px] leading-[20px] font-medium items-center bg-[#146EB4] text-[#FFFFFF]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center flex justify-center text-sm font-medium items-center bg-[#146EB4] text-[#FFFFFF]`}
         >
           10
         </div>
-        <div className={`${pixelPerfect ? "w-[8px] h-full" : ""}`} />
+        <div className="w-2 h-full" />
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center py-[2px] text-sm font-normal self-stretch text-[#4D4D4D]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center py-0.5 text-sm font-normal self-stretch text-[#4D4D4D]`}
         >
           11
         </div>
-        <div className={`${pixelPerfect ? "w-[8px] h-full" : ""}`} />
+        <div className="w-2 h-full" />
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center py-[2px] text-sm font-normal self-stretch text-[#4D4D4D]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center py-0.5 text-sm font-normal self-stretch text-[#4D4D4D]`}
         >
           12
         </div>
-        <div className={`${pixelPerfect ? "w-[8px] h-full" : ""}`} />
+        <div className="w-2 h-full" />
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center py-[2px] text-sm font-normal self-stretch text-[#4D4D4D]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center py-0.5 text-sm font-normal self-stretch text-[#4D4D4D]`}
         >
           13
         </div>
-        <div className={`${pixelPerfect ? "w-[8px] h-full" : ""}`} />
+        <div className="w-2 h-full" />
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center py-[2px] text-sm font-normal self-stretch text-[#4D4D4D]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center py-0.5 text-sm font-normal self-stretch text-[#4D4D4D]`}
         >
           14
         </div>
-        <div className={`${pixelPerfect ? "w-[8px] h-full" : ""}`} />
+        <div className="w-2 h-full" />
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center py-[2px] text-sm font-normal self-stretch text-[#4D4D4D]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center py-0.5 text-sm font-normal self-stretch text-[#4D4D4D]`}
         >
           15
         </div>
-        <div className={`${pixelPerfect ? "w-[8px] h-full" : ""}`} />
+        <div className="w-2 h-full" />
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center py-[2px] text-sm font-normal self-stretch text-[#4D4D4D]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center py-0.5 text-sm font-normal self-stretch text-[#4D4D4D]`}
         >
           16
         </div>
-        <div className={`${pixelPerfect ? "w-[8px] h-full" : ""}`} />
+        <div className="w-2 h-full" />
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center py-[2px] text-sm font-normal self-stretch text-[#4D4D4D]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center py-0.5 text-sm font-normal self-stretch text-[#4D4D4D]`}
         >
           17
         </div>
-        <div className={`${pixelPerfect ? "w-[8px] h-full" : ""}`} />
+        <div className="w-2 h-full" />
         <div
-          className={`${
-            pixelPerfect
-              ? "w-[28px] h-[28px] rounded-[4px] text-center py-[2px] text-sm font-normal self-stretch text-[#4D4D4D]"
-              : ""
-          }`}
+          className={`w-7 h-7 rounded text-center py-0.5 text-sm font-normal self-stretch text-[#4D4D4D]`}
         >
           18
         </div>
       </div>
-      <div className={`${pixelPerfect ? "w-[24px] h-full" : ""}`} />
+      <div className="w-6 h-full" />
       <div
         className={`${
-          pixelPerfect
-            ? "w-[74px] rounded-[4px] border-[1px] py-[6px] pr-[6px] pl-[12px] border-[#D9D9D9] flex items-center justify-center bg-[#FFFFFF] h-[32px]"
-            : ""
-        }`}
+          pixelPerfect ? "w-[74px] border-[1px]" : "w-1/6 border"
+        } rounded py-1.5 pr-1.5 pl-3 border-[#D9D9D9] flex items-center justify-center bg-[#FFFFFF] h-8`}
       >
-        <div
-          className={`${
-            pixelPerfect ? "text-[#4D4D4D] text-sm font-medium" : ""
-          }`}
-        >
-          Next
-        </div>
-        <div className={`${pixelPerfect ? "w-[6px] h-full" : ""}`} />
-        <div className={`${pixelPerfect ? "w-[18px] h-[18px]" : ""}`}>
+        <div className="text-[#4D4D4D] text-sm font-medium">Next</div>
+        <div className="w-1.5 h-full" />
+        <div className={`${pixelPerfect ? "w-[18px] h-[18px]" : "w-4 h-4"}`}>
           <img
             src="/images/outlined-chevron-right.png"
             alt="outlined-chevron-right"

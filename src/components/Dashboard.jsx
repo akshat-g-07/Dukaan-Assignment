@@ -28,40 +28,38 @@ const Dashboard = ({ pixelPerfect }) => {
            */}
           <article
             className={`${
-              pixelPerfect ? "w-[1152px] h-[36px] mt-[32px]" : ""
-            } justify-between flex items-center`}
+              pixelPerfect ? "w-[1152px]" : "w-full"
+            } h-9 mt-8 justify-between flex items-center`}
           >
             <div
               className={`${
-                pixelPerfect ? "w-[91px] h-[28px]" : ""
-              } font-medium text-xl text-[#1A181E]`}
+                pixelPerfect ? "w-[91px]" : "w-auto"
+              } font-medium text-xl h-7 text-[#1A181E]`}
             >
               Overview
             </div>
             <div
               className={`${
-                pixelPerfect
-                  ? "border-[1px] h-[36px] rounded-[4px] w-[137px]"
-                  : ""
-              } flex bg-[#FFFFFF] border-[#D9D9D9]`}
+                pixelPerfect ? "border-[1px] w-[137px]" : "w-32 border"
+              } flex items-center bg-[#FFFFFF] rounded border-[#D9D9D9] h-9`}
             >
               <div
                 className={`${
-                  pixelPerfect ? "w-[86px] h-[24px] ml-[14px] my-[6px]" : ""
-                }text-[#4D4D4D] font-normal text-base`}
+                  pixelPerfect ? "w-[86px]" : "w-20"
+                }text-[#4D4D4D] font-normal text-base ml-3.5 my-1.5 h-6`}
               >
                 Last Month
               </div>
               <div
                 className={`${
-                  pixelPerfect ? "w-[16px] h-[16px] my-[10px] ml-[7px]" : ""
-                }`}
+                  pixelPerfect ? "ml-[7px]" : "ml-1.5"
+                } w-4 h-4 my-2.5`}
               >
                 <img src="images/icons-arrow.png" alt="icons-arrow" />
               </div>
             </div>
           </article>
-          <div className={`${pixelPerfect ? "h-[24px]" : ""} w-full`} />
+          <div className="h-6 w-full" />
           {/**
            * Content Box 1 Ends
            */}
@@ -71,84 +69,74 @@ const Dashboard = ({ pixelPerfect }) => {
            */}
           <article
             className={`${
-              pixelPerfect ? "h-[118px]" : ""
-            } justify-center flex w-fit`}
+              pixelPerfect
+                ? "h-[118px] w-fit justify-center"
+                : "h-28 w-full justify-between"
+            } flex`}
           >
             <div
               className={`${
-                pixelPerfect ? "w-[566px] h-[118px] p-[20px] rounded-[8px]" : ""
-              } bg-[#FFF]`}
+                pixelPerfect ? "w-[566px] h-[118px]" : "w-5/12 h-28"
+              } bg-[#FFF] p-5 rounded-lg`}
               style={{
                 boxShadow: "0px 2px 6px 0px rgba(26, 24, 30, 0.04)",
               }}
             >
-              <p
-                className={`${
-                  pixelPerfect ? "h-[24px]" : ""
-                } font-normal text-base text-[#4D4D4D]`}
-              >
+              <p className={`font-normal h-6 text-base text-[#4D4D4D]`}>
                 Online orders
               </p>
-              <p className={`${pixelPerfect ? "h-[16px]" : ""} w-full`} />
+              <p className="h-4 w-full" />
               <p
                 className={`${
-                  pixelPerfect ? "text-[32px] leading-[38px] h-[38px]" : ""
+                  pixelPerfect
+                    ? "text-[32px] leading-[38px] h-[38px]"
+                    : "text-3xl h-fit"
                 } text-[#1A181E] font-medium`}
               >
                 231
               </p>
             </div>
-            <div className={`${pixelPerfect ? "w-[20px]" : ""} h-full`} />
+            <div className="w-5 h-full" />
             <div
               className={`${
-                pixelPerfect ? "w-[566px] h-[118px] p-[20px] rounded-[8px]" : ""
-              } bg-[#FFF]`}
+                pixelPerfect ? "w-[566px] h-[118px]" : "w-5/12 h-28"
+              } bg-[#FFF] p-5 rounded-lg`}
               style={{
                 boxShadow: "0px 2px 6px 0px rgba(26, 24, 30, 0.04)",
               }}
             >
-              <p
-                className={`${
-                  pixelPerfect ? "h-[24px]" : ""
-                } font-normal text-base text-[#4D4D4D]`}
-              >
+              <p className={`font-normal h-6 text-base text-[#4D4D4D]`}>
                 Amount received
               </p>
-              <p className={`${pixelPerfect ? " h-[16px]" : ""} w-full`} />
+              <p className="h-4 w-full" />
               <p
                 className={`${
-                  pixelPerfect ? " text-[32px] leading-[38px] h-[38px]" : ""
-                } font-medium text-[#1A181E]`}
+                  pixelPerfect
+                    ? "text-[32px] leading-[38px] h-[38px]"
+                    : "text-3xl h-fit"
+                } text-[#1A181E] font-medium`}
               >
                 ₹23,92,312.19
               </p>
             </div>
           </article>
-          <div className={`${pixelPerfect ? "h-[32px]" : ""} w-full`} />
+          <div className="h-8 w-full" />
           {/**
            * Content Box 2 Ends
            */}
 
-          <p
-            className={`${
-              pixelPerfect
-                ? "text-[20px] leading-[28px] h-[28px] text-[#1A181E] font-medium"
-                : ""
-            }`}
-          >
+          <p className={`text-xl h-7 text-[#1A181E] font-medium`}>
             Transactions | This Month
           </p>
-          <p className={`${pixelPerfect ? "w-full h-[20px]" : ""}`} />
+          <p className="w-full h-5" />
 
           {/**
            * List Starts
            */}
           <article
             className={`${
-              pixelPerfect
-                ? "w-[1152px] h-[1096px] px-[12px] pb-[24px] pt-[12px] rounded-[8px]"
-                : ""
-            } bg-[#FFF]`}
+              pixelPerfect ? "w-[1152px] h-[1096px]" : "w-full h-fit"
+            } bg-[#FFF] px-3 pb-6 pt-3 rounded-lg`}
             style={{
               boxShadow: "0px 2px 6px 0px rgba(26, 24, 30, 0.04)",
             }}
