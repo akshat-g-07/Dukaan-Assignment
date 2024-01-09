@@ -6,50 +6,30 @@ const LeftPanel = ({ pixelPerfect }) => {
     <>
       <nav
         className={`${
-          pixelPerfect
-            ? "w-[224px] h-full bg-[#1E2640] text-white px-[10px] py-[16px]"
-            : ""
-        }`}
+          pixelPerfect ? "w-[224px]" : "w-2/12"
+        } h-full bg-[#1E2640] text-white px-2.5 py-4`}
       >
         {/*
         Header Starts
         */}
-        <div className={`${pixelPerfect ? "flex h-[42px] w-[192px]" : ""}`}>
+        <div className={`${pixelPerfect ? "h-[42px]" : "h-10"} w-48 flex`}>
           <div
             className={`${
-              pixelPerfect ? "w-[39px] h-[39px] rounded-[4px]" : ""
-            }`}
+              pixelPerfect ? "w-[39px] h-[39px]" : "w-10 h-10"
+            } rounded`}
           >
             <img src="/images/profile_pic.png" alt="Profile Pic" />
           </div>
-          <div
-            className={`${
-              pixelPerfect ? "h-full w-[12px] bg-transparent" : ""
-            }`}
-          />
-          <div className={`${pixelPerfect ? "w-[108px]" : ""}`}>
-            <p className={`${pixelPerfect ? "font-medium text-base" : ""}`}>
-              Nishyan
-            </p>
-            <p
-              className={`${
-                pixelPerfect ? "font-normal text-sm opacity-80 underline" : ""
-              }`}
-            >
+          <div className={`w-3 bg-transparent h-full`} />
+          <div className={`${pixelPerfect ? "w-[108px]" : "w-20"}`}>
+            <p className="font-medium text-base">Nishyan</p>
+            <p className="font-normal text-sm opacity-80 underline">
               Visit Store
             </p>
           </div>
-          <div
-            className={`${
-              pixelPerfect ? "h-full w-[12px] bg-transparent" : ""
-            }`}
-          />
-          <div
-            className={`${
-              pixelPerfect ? "h-full w-fit flex items-center" : ""
-            }`}
-          >
-            <div className={`${pixelPerfect ? "w-[20px] h-[20px]" : ""}`}>
+          <div className="h-full w-3 bg-transparent" />
+          <div className="h-full w-fit flex items-center">
+            <div className="w-5 h-5">
               <img
                 src="/images/navbar-bold-chevron-down.png"
                 alt="navbar-bold-chevron-down"
@@ -57,9 +37,7 @@ const LeftPanel = ({ pixelPerfect }) => {
             </div>
           </div>
         </div>
-        <div
-          className={`${pixelPerfect ? "h-[24px] w-full bg-transparent" : ""}`}
-        />
+        <div className="h-6 w-full bg-transparent" />
         {/*
         Header Ends
         */}
@@ -67,37 +45,25 @@ const LeftPanel = ({ pixelPerfect }) => {
         {/*
         List Starts
         */}
-        <div className={`${pixelPerfect ? "w-full h-[1314px]" : ""}`}>
+        <div className="w-full h-[1314px]">
           {LeftPanelItems.map((item) => {
             return (
               <>
                 <div
                   key={item.name}
                   className={`${
-                    pixelPerfect
-                      ? "h-[36px] w-[208px] rounded-[4px] px-[16px] py-[8px] flex"
-                      : ""
-                  } ${
+                    pixelPerfect ? "w-[208px]" : "w-full"
+                  } rounded flex py-2 px-4 h-9 ${
                     item.name === "Payments"
                       ? "bg-[#FFFFFF1A]"
                       : "bg-transparent"
                   }`}
                 >
-                  <div
-                    className={`${
-                      pixelPerfect ? "w-[20px] h-[20px] opacity-80" : ""
-                    }`}
-                  >
+                  <div className="w-5 h-5 opacity-80">
                     <img src={`/images/${item.icon}.png`} alt={item.icon} />
                   </div>
-                  <div className={`${pixelPerfect ? "h-full w-[12px]" : ""}`} />
-                  <div
-                    className={`${
-                      pixelPerfect
-                        ? "h-[20px] opacity-80 w-fit font-medium text-sm"
-                        : ""
-                    }`}
-                  >
+                  <div className="h-full w-3" />
+                  <div className="h-5 opacity-80 w-fit font-medium text-sm">
                     {item.name}
                   </div>
                 </div>
@@ -105,7 +71,7 @@ const LeftPanel = ({ pixelPerfect }) => {
             );
           })}
         </div>
-        <div className={`${pixelPerfect ? "h-[16px] w-full" : ""}`} />
+        <div className="h-4 w-full" />
         {/*
         List Ends
         */}
@@ -115,28 +81,26 @@ const LeftPanel = ({ pixelPerfect }) => {
         */}
         <div
           className={`${
-            pixelPerfect
-              ? "rounded-[4px] py-[6px] px-[12px] h-[54px] w-full bg-[#353C53] flex"
-              : ""
-          }`}
+            pixelPerfect ? "h-[54px]" : "h-12"
+          } w-full py-1.5 px-3 rounded flex bg-[#353C53]`}
         >
-          <div className={`${pixelPerfect ? "flex items-center h-full" : ""}`}>
-            <div
-              className={`${
-                pixelPerfect
-                  ? "w-[24px] h-[24px] p-[6px] rounded-[4px] bg-[#FFFFFF1A]"
-                  : ""
-              }`}
-            >
+          <div className="flex items-center h-full">
+            <div className={`w-6 p-1.5 h-6 rounded bg-[#FFFFFF1A]`}>
               <img src="/images/navbar-creds.png" />
             </div>
           </div>
-          <div className={`${pixelPerfect ? "h-full w-[12px]" : ""}`} />
+          <div className="h-full w-3" />
           <div>
-            <p className={`${pixelPerfect ? "font-normal text-sm" : ""}`}>
+            <p
+              className={`${pixelPerfect ? "text-sm" : "text-xs"} font-normal`}
+            >
               Available Credits
             </p>
-            <p className={`${pixelPerfect ? "font-medium text-base" : ""}`}>
+            <p
+              className={`${
+                pixelPerfect ? "text-base" : "text-sm"
+              } font-medium`}
+            >
               222.10
             </p>
           </div>

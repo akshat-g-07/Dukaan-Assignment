@@ -6,12 +6,14 @@ const Solution = ({ pixelPerfect }) => {
   return (
     <>
       <div
-        className={`${pixelPerfect ? "p-24 w-fit h-fit bg-slate-300" : ""}
+        className={`${
+          pixelPerfect ? "w-fit" : "w-screen overflow-x-hidden"
+        } p-24 bg-slate-300 h-fit
       `}
       >
         <div
           className={`
-        ${pixelPerfect ? "w-[1440px] h-[1482px] flex" : ""}
+        ${pixelPerfect ? "w-[1440px] h-[1482px]" : "w-full h-fit"} flex
         `}
         >
           <LeftPanel pixelPerfect={pixelPerfect} />
