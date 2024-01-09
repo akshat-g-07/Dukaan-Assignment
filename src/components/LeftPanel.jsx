@@ -3,7 +3,7 @@ import LeftPanelItems from "./LeftPanelItems";
 const LeftPanel = () => {
   return (
     <>
-      <div className="w-[224px] h-full bg-[#1E2640] text-white px-[10px] py-[16px]">
+      <nav className="w-[224px] h-full bg-[#1E2640] text-white px-[10px] py-[16px]">
         {/*
         Header Starts
         */}
@@ -83,7 +83,7 @@ const LeftPanel = () => {
         {/*
         Footer Ends
         */}
-      </div>
+      </nav>
     </>
   );
 };

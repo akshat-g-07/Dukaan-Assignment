@@ -15,7 +15,7 @@ function App() {
       {/*
   Header to control the type of solution i.e., Pixel Perfect vs Responsive
   */}
-      <div className="fixed w-screen top-0 h-auto flex justify-center items-center text-center font-semibold py-1 bg-emerald-500 text-white">
+      <header className="fixed w-screen top-0 h-auto flex justify-center items-center text-center font-semibold py-1 bg-emerald-500 text-white">
         <div
           className="w-fit hover:bg-emerald-800 cursor-pointer px-2 rounded-lg duration-300"
           onClick={() => {
@@ -32,7 +32,7 @@ function App() {
           />
           Pixel Perfect Solution
         </div>
-      </div>
+      </header>
       {/*
   Header Done
   */}
@@ -42,7 +42,7 @@ function App() {
       {/*
   Footer Starts
   */}
-      <div className="fixed w-screen cursor-pointer bottom-0 h-auto flex justify-center items-end text-center font-semibold py-1 bg-slate-500 text-white">
+      <footer className="fixed w-screen cursor-pointer bottom-0 h-auto flex justify-center items-end text-center font-semibold py-1 bg-slate-500 text-white">
         Made By&nbsp;
         <a
           href="https://akshat-garg.netlify.app"
@@ -87,7 +87,7 @@ function App() {
             </a>
           </Tooltip>
         </div>
-      </div>
+      </footer>
       {/*
   Footer Ends
   */}
